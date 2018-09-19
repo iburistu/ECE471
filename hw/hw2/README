@@ -1,0 +1,11 @@
+Name: Zachary Linkletter
+
+Answers to homework questions in Part7:
+
+a.) To learn more about the ls program, you can run 'man ls' to see the manual page (man page) for the ls command.
+
+b.) The -a flag for ls stands for all, and causes ls to not ignore entries starting with .
+
+c.) Linux is used in embedded systems because it is typically lower power / lower resource than Windows or any other operating system, it is free as in monetarily and as well as freedom, and Linux on ARM is actually very well supported.
+
+d.) I am using SSH over my local network to connect to my Pi.  I am copying files back and forth using scp on my Linux laptop.

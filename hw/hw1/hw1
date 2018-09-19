@@ -1,0 +1,11 @@
+1.  a.)	This would be an embedded system because it is resource constrained, embedded inside something else (a toothbrush), and is low power (dependent on a small battery).  It also has very limited disk space (low RAM and flash storage).
+    b.)	The iPhone 7 is not an embedded system because it is not inside something else, it is not resource constrained, and it has a large power draw compared to smaller integrated circuits.  The iPhone 7 is much more powerful than a typical embedded system.
+    c.)	This system is an embedded system because it is very low power, has a singular function that is well defined, and it is embedded inside of the microwave itself.  It is not capable of performing any other functions.
+
+2.  a.)	The ARM 1176 is a 32-bit processor because its registers are 32-bit.  Bittedness is typically denoted by the register size of a processor.
+    b.) The MOS 6502 processor is a 8-bit processor even though the address bus and instruction pointer are 16-bit, because the register size is the typical measure of bittedness of a processor.
+
+3.  a.)	An ASIC might be better than using a microcontroller because a microcontroller will have more overhead than a ASIC if the embedded system does not need all the features that the microcontroller can offer.  There's also less power usage if an ASIC is used, meaning potentially more battery life.
+    b.)	A microcontroller has significantly less design costs and fab costs.  A microcontroller would also be easier for more people to develop for, as opposed to and ASIC that might be very particular and difficult to work with.  A microcontroller might be cheaper as well.
+
+4.) The J stands for Jazelle (Java support), the Z stands for trustzone (secure enclave), the F stands for floating point, and the S stands for synthezisable (there exists some file that allows a person to generate the layout of the processor).
