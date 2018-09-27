@@ -1,0 +1,27 @@
+ECE 471 Fall 2018 -- Homework 3
+
+Names of Group Members: Zachary Linkletter
+
+Answer to Question #3a:
+
+#1: Adding the immediate value '10' to r10 offsets where the buffer is pointing by 10.  This is done because converting a 32-bit int to a string requires multiple divisions by 10.  This addition moves the pointer to the next character in the buffer.
+
+#2: 0x30 equals 00110000 in binary.  By adding this number to the r8 register (the register that holds the divide_by_10 exit value), the next operation (strb) can update the pointer at the same time by -1.  By adding '96' to the r8 register, the strb operation can calculate an address from the base register value (r8 + 0x30) and and offset register value (#-1) and store a byte to the calculated address.  The 0x30 makes sure it goes where intended.
+
+Describe your something cool:
+
+Answer to Question #7:
+
+a.  They're around the same size (600 kB).
+    hello_world:	612
+    hello_world.thumb:	600
+    hello_world.thumb2:	596
+b.  The C file is 8156 kB, almost 14 times larger than the Thumb code.
+
+c.  Assembly is nice for a constrained file-size system.  You can get more usable code per unit storage.
+
+d.  The C code was significantly easier to write.  I personally am not a fan of assembly at all, so writing it is a pain.
+
+Answer to Question #8a:
+
+The Gregorian reformation was adopted by the Kingdom of Great Britain (including it's possessions in North America) in September 1752.  The September 1752 calender shows the adjusted days missing to make up for the lack of leap year adjustments throughout the years
