@@ -1,0 +1,30 @@
+ECE 471 Fall 2018 -- Homework 4
+
+Name: Zachary Linkletter
+
+
+What you did for something cool (if applicable): Pressing the switch changes the frequency of the LED blink.
+
+
+Answers to Question #5:
+
+a.  usleep() allows the process to go to sleep and give the CPU time to do other tasks.  Busy waiting forces the CPU to do things that do nothing for the program but only act to keep delays.  Busy waiting prevents the OS from doing anything else during the delay.
+
+b.  Interacting with the GPIO is easy with a operating system because there are many ways to abstract the GPIO interaction.  If you were to write code for a particular ARM chip, it wouldn't be compatable for other architectures.  An operating system lets you write code that works for many architectures.
+
+c.  There are some speed limitations when writing to the GPIO with the operating system.  The operating system takes up a lot of processing power and CPU time, which limits the speed of the toggling.
+
+d.  A web browser is part of an operating system if the operating system needs it to run.  Right now I don't think that for Windows a web browser is such an integral part of the operating system that it is a part of the operating system.  I could imagine an operating system that is cloud powered (more so than ChromeOS) and an internet connection is necessary for the system to run.
+
+Answers to Question #6:
+
+a. Machine type:    [    0.000000] OF: fdt: Machine model: Raspberry Pi 3 Model B Rev 1.2
+
+
+b. Kernel version:  Linux niwot 4.14.34-v7+ #1110 SMP Mon Apr 16 15:18:51 BST 2018 armv7l GNU/Linux
+
+
+c. Free Disk space: /dev/root        15G  4.4G  9.2G  33% /
+
+
+d.  The -h flag makes the output human readable and lists sizes in powers of 1024.
