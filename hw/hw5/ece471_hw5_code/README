@@ -1,0 +1,26 @@
+ECE471 HW5 -- Fall 2018
+
+Name:	Zachary Linkletter
+
+
+7.	Describe what your "something cool" code does
+	My something cool is that the display outputs my name 'ZACh'.
+
+8.
+ a).	The GPU is in charge of booting the Pi.  The GPU has it's own hardware and OS called ThreadX that boots the Pi.  Most ARM devices have a hardware specific MLO as the first stage in the boot process, which then gets moved over to uBoot for the second stage.
+ b).	The /boot partition in the Pi is FAT32 because there already exists stable drivers for FAT32 and the firmware has to read it; it would be difficult to write firmware that would read from another partition type to boot when there already exists a working driver for FAT32.
+ c).	Firmware is the generic name for the code/program that is responsible for loading the operating system kernel into memory and running it.
+ d).	i2cdetect does not show those addresses for the following reasons:
+	0x00 - Reserved: General Call Addresses
+	0x01 - Reserved: CBUS Compatablilty
+	0x02 - Reserved: Reserved for I2C compatable bus variants
+	...
+	0x78 0x79 0x7A 0x7B - Reserved: 10-bit I2C addressing
+	0x7C 0x7D 0x7E 0x7F - Reserved: for future use
+
+9.
+ a).	138
+ b).	94
+
+
+
