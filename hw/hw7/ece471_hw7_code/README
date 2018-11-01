@@ -1,0 +1,17 @@
+ECE471 Fall 2018 -- HW7
+
+Name:
+
+4. Describe your something cool:
+    My something cool is that at 75 degrees F, the program tells the user that the sensor is 'too hot', gives the current read temperature, and the temperature increase necessary to shut down the program.  I wanted to simulate a nuclear reactor and an automated shutdown procedure as the core gets too hot.
+
+5. a.	SPI requires more wires.  For example, this particular homework took at least 10 jumper wires to use the SPI device (including wires for the temp sensor), while the I2C devices require significantly less (4 for the LCD screen).  There is also a formal standard for I2C devices.
+   b.	SPI is lower power than I2C, and can potentially be faster in full-duplex mode.
+   c.	No.  SPI, like I2C, is limited in the length between masters and slaves.  The range for SPI is around 10 feet.
+   d.	Bitbanging with high precision is very difficult, and if the clock frequency is not exaclty 10kHz, there might be linearity errors.  Also, bitbanging from regular Linux has a ton of overhead, so toggling a GPIO (sysfs or otherwise) with incredible precision consistantly is near impossible.
+
+6. a.	/dev/null is a special device that discards all information written to it.  I pipe some of the outputs of some commands to /dev/null in some of my own bash scripts.
+   b.	/dev/full is a special file that always returns the error code ENOSPC ('no space left on device') on writing, and provides an infinite number of zero bytes to any process that reads from it.  This device is used when testing behavior of a program when it encounters a 'disk full' error.
+   c.	/dev/zero is a special file that provides as many null characters (0x00 in ASCII) as are read from it (much like /dev/full).  Piping into /dev/null succeeds with no other effects, much like /dev/null.
+   d.	/dev/random probably returns random numbers as much as are read from it.  I think this would be good for testing the robustness of a program.
+
