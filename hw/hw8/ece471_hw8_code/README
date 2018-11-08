@@ -1,0 +1,18 @@
+ECE471 Fall 2018 -- HW8
+
+Name: Zachary Linkletter
+
+
+3. Describe your something cool: Prints the temperature in F.
+
+
+4. a.	Parasitic power mode means that it extracts all of its operating power from the serial interface line. No local power supply is needed in that case. The idle state for the 1-Wire bus is high.  In addition, to assure that the DS18B20-PAR has sufficient supply current during temperature conversions, it is necessary to provide a strong pullup on the 1-Wire bus whenever temperature conversions or EEPROM writes are taking place.
+   b.	1-wire has a longer range than either of the other two options (i2c or SPI).  It would be significantly easier (and less costly) to run three wires 100 yards than either 4 wires or 6 wires for i2c or SPI, respectfully.  Plus, 1-wire does not have the same length limitations of SPI or i2c.
+
+5. a. My script prints 'ECE471 is cool'
+
+
+
+
+
+
